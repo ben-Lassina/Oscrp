@@ -18,4 +18,6 @@
     <?php include('../public/content.php'); ?>
 </body>
 
-</html>
+</html><?php
+
+?>
