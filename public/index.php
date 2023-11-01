@@ -17,7 +17,7 @@
     <?php include('../public/navbar.php'); ?>
     <?php include('../public/content.php'); ?>
 </body>
-
+ 
 </html><?php
 
 ?>
