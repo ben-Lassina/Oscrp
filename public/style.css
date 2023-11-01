@@ -1,17 +1,27 @@
-* {
+*, *::before, *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
+html{
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
   font-size: 2rem;
-  background: linear-gradient(to right, white, 30%, rgb(34, 184, 209, 100%));
+  background:  #22b8d1;
+  font-family: sans-serif;
+}
+
+p{
+  padding: 6rem;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
 }
 
 .navbar {
@@ -33,6 +43,11 @@ body {
   margin-right: 15rem;
   cursor: pointer;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu > li > a{
+  text-decoration: none;
 }
 
 .title{
@@ -45,13 +60,19 @@ body {
 }
 
 .section--second {
-  width: 60%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 65vh;
 }
 
 .games {
- display: flex;
- justify-content: flex-end;
- gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .games__game {
@@ -61,17 +82,31 @@ body {
   transition: 0.8s opacity;
   animation-name: fadeIn;
   animation-duration: 0.8s;
-
 }
 
+.games__figure{
+  width: 100%;
+  height: 100%;
+}
 
-.games__img {
+.fa-solid{
+  height: 100%;
+  font-size: 300%;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul > li > figure > img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   transition: transform 0.5s;
-  position: relative;
   left: 20rem;
+  box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2),
+  inset 0 -1rem 1rem -1rem rgba(0,0,0,0.1);
 }
 
 .games__img:hover {
@@ -79,30 +114,28 @@ body {
   transform: scale(1.1);
 }
 
-
-.arrow-game {
-  width: 2%;
-  font-size: 300%;
-  outline: none;
-  border: none;
-  position: relative;
-  top: 35rem;
-}
-
-.arrow-game-right {
-  width: 2%;
-  font-size: 300%;
-  outline: none;
-  border: none;
-  position: relative;
-  top: 35rem;
-  left: 100rem;
+.arrow-game-right .arrow-game-left{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
 li[data-title="goal4"]:nth-child(4),
 li[data-title="goal5"]:nth-child(5),
 li[data-title="goal6"]:nth-child(6) {
   display: none;
+}
+
+.over_ons{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link{
+  border: 0.3rem;
+  padding: 2rem;
 }
 
 @keyframes away {
@@ -133,4 +166,3 @@ li[data-title="goal6"]:nth-child(6) {
     filter: blur(0px);
   }
 }
-

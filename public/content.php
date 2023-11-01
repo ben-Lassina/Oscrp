@@ -1,14 +1,12 @@
-<div class="content">
+<main class="content">
     <h1 class="title">Welkom bij de SDG'S</h1>
     <p>De SDG-game is een online spel over de 17 duurzame ontwikkelingsdoelen. Dit online spel daagt studenten
         uit zich te verdiepen in de SDG’s en om challenges uit te voeren zodat zij kennis maken met alle SDG’s
         volgens de Nederlandse maatstaven.</p>
 
     <section class="section section--second">
-        <button class="arrow-game">
-            <i class="fa-solid fa-circle-arrow-left"></i> </button>
-        <button class="arrow-game-right">
-            <i class="fa-solid fa-circle-arrow-right"></i> </button>
+            <i class="fa-solid fa-circle-arrow-left"></i> 
+        
         <ul class="games">
             <li data-title="HOGWARTS-LEGACY" class="games__game">
                 <figure class="games__figure">
@@ -45,5 +43,12 @@
                         class="games__img" />
                 </figure>
             </li>
+        </ul>
+            <i class="fa-solid fa-circle-arrow-right"></i>
     </section>
-</div>
+
+    <section class="over_ons">
+        <h2 class="title">Speel de game</h2>
+        <button class="link">Speel Nu</button>
+    </section>
+</main>
