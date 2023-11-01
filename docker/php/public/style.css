@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background: red;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(236, 76, 76);
+    padding: 1.5rem 0;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+}
+
+nav ul p {
+    font-size: 2rem;
+}
+
+nav ul li {
+ font-size: 1.2rem;
+ list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul div {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+
+
+.album {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(60, 81, 81);
+    width: 100%;
+    gap: 2rem;
+    margin-top: 10rem;
+}
+
+.album section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(102, 146, 146);
+    width: 80%;
+    gap: 2rem;
+    
+}
+
+.album section div {
+    width: 25%;
+    background-color: aliceblue;
+    padding: 1rem;
+    
+}
+
+.album section div img {
+    width: 100%;
+}
+
+.album section div h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}

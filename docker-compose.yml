@@ -15,7 +15,6 @@ services:
       - './:/var/www/html'
     depends_on:
       - mariadb
-      - mailhog
 
   # Nginx Service
   nginx:
@@ -43,20 +42,13 @@ services:
     volumes:
       - './docker/mysqldata:/var/lib/mysql'
 
-  # mailhog
-  mailhog:
-    image: mailhog/mailhog:latest
-    ports:
-      - 1025:1025
-      - 8025:8025
-
   # php myadmin in an external image
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
       PMA_HOST: mariadb
-      PMA_USER: db_user
-      PMA_PASSWORD: mijn_p@ss#
+      PMA_USER: root
+      PMA_PASSWORD: '4dy5qwtrsag#!sad'
     ports:
       - "8088:80"
 
