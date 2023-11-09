@@ -1,7 +1,7 @@
 <main class="content">
     <h1 class="title">Welkom bij de SDG'S</h1>
     <p>De SDG-game is een online spel over de 17 duurzame ontwikkelingsdoelen. Dit online spel daagt studenten
-        uit zich te verdiepen in de SDG’s en om challenges uit te voeren zodat zij kennis maken met alle SDG’s
+        uit om zich te verdiepen in de SDG’s, en om challenges uit te voeren zodat zij kennis maken met alle SDG’s
         volgens de Nederlandse maatstaven.</p>
 
     <section class="section section--second">
